@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emaan Hookey | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">Code & Chaos</div>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="dark-mode-toggle">
+          🌞<input type="checkbox" id="theme-toggle">🌙
+        </div>
+        <button id="menu-toggle">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2><span class="highlight">Emaan Hookey</span></h2>
+      <p><span id="typing-text">Just a friendly neighborhood dev just trying to make the internet less ugly</span></p>
+      <a href="#projects" class="btn">Behold My Work</a>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        By day, I wrangle HTML, CSS, and JavaScript. By night... I still do that. I'm the kind of person who thinks semicolons are optional but emotional breakdowns over broken code are mandatory.
+      </p>
+      <p>
+        I specialize in making things that look good and (usually) don’t crash. I love clean code, clever UI, and snacks. Mostly snacks.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project" data-aos="fade-right">
+          <h3>🧮 Calculator</h3>
+          <p>A sassy calculator that neatly performs all basic math operations, decimals included.</p>
+        </div>
+        <div class="project" data-aos="fade-left">
+          <h3>🖼️ Image Gallery</h3>
+          <p>Stunning Greek statues that silently judge you while you browse.</p>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:20px;">More projects coming soon (enough)!</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>
+        Got a cool project? Want to hire someone who can code and quote memes in the same breath? Slide into my inbox:
+      </p>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name (or alias, I won’t judge)" required />
+        <input type="email" placeholder="Your Email (spam-free, promise)" required />
+        <textarea placeholder="Your Message (bonus points for jokes)" required></textarea>
+        <button type="submit">Summon Me</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Emaan Hookey. No pixels were harmed in the making of this site.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
