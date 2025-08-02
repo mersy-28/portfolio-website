@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+/* reset & base */
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ ul {
   list-style: none;
 }
 
-/* Container */
+/* container */
 .container {
   width: 90%;
   max-width: 1100px;
@@ -31,7 +31,7 @@ ul {
   padding: 20px 0;
 }
 
-/* Header */
+/* header */
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #eee;
@@ -87,7 +87,7 @@ nav {
   cursor: pointer;
 }
 
-/* Hero Section */
+/* hero section */
 #hero {
   text-align: center;
   padding: 100px 20px;
@@ -124,7 +124,7 @@ nav {
   background-color: #005fc1;
 }
 
-/* Sections */
+/* sections */
 section {
   padding: 80px 0;
 }
@@ -135,14 +135,14 @@ h2 {
   color: #1e1e1e;
 }
 
-/* About */
+/* about */
 #about p {
   max-width: 700px;
   margin: 0 auto 20px;
   text-align: center;
 }
 
-/* Projects */
+/* projects */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -168,7 +168,7 @@ h2 {
   color: #0077ff;
 }
 
-/* Contact */
+/* contact */
 #contact p {
   text-align: center;
   max-width: 600px;
@@ -213,7 +213,7 @@ button[type="submit"]:hover {
   background-color: #005fc1;
 }
 
-/* Footer */
+/* footer */
 footer {
   text-align: center;
   padding: 30px 0;
@@ -222,7 +222,7 @@ footer {
   font-size: 14px;
 }
 
-/* Responsive Navigation */
+/* responsive nav */
 @media (max-width: 768px) {
   #nav-links {
     display: none;
@@ -246,48 +246,15 @@ footer {
   }
 }
 
+
+
+/* dark mode */
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
 }
 
-body.dark-mode header {
-  background-color: #1e1e1e;
-  border-bottom-color: #333;
-}
-
-body.dark-mode .project {
-  background-color: #1e1e1e;
-  color: #fff;
-}
-
-body.dark-mode input,
-body.dark-mode textarea {
-  background-color: #222;
-  color: #fff;
-  border-color: #555;
-}
-
-body.dark-mode footer {
-  background-color: #1e1e1e;
-  color: #aaa;
-}
-
-.dark-mode-toggle {
-  margin-left: 15px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 16px;
-}
-
-/* 🔧 DARK MODE FIX — BOOTSTRAP-FRIENDLY + FULL COVERAGE */
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-/* Text & Links */
+/* text & links */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -303,7 +270,7 @@ body.dark-mode a {
   color: #e0e0e0 !important;
 }
 
-/* Cards, Sections, and Containers */
+/* cards, sections, and containers */
 body.dark-mode .card,
 body.dark-mode .bg-light,
 body.dark-mode section,
@@ -315,7 +282,7 @@ body.dark-mode .container {
   border-color: #333 !important;
 }
 
-/* Forms */
+/* forms */
 body.dark-mode .form-control {
   background-color: #2b2b2b !important;
   color: #fff !important;
@@ -331,7 +298,7 @@ body.dark-mode textarea.form-control {
   color: #fff !important;
 }
 
-/* Buttons */
+/* buttons */
 body.dark-mode .btn-primary {
   background-color: #2196f3 !important;
   border-color: #2196f3 !important;
@@ -342,12 +309,12 @@ body.dark-mode .btn-primary:hover {
   background-color: #1976d2 !important;
 }
 
-/* Navbar Links */
+/* navbar links */
 body.dark-mode .nav-link:hover {
   color: #ffffff !important;
 }
 
-/* GitHub iframe wrapper (if needed) */
+/* gitHub iframe */
 body.dark-mode iframe {
   filter: brightness(0.9);
 }

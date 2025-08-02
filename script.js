@@ -1,9 +1,9 @@
-// Mobile menu toggle
+// mobile menu toggle
 document.getElementById("menu-toggle").addEventListener("click", function () {
   document.getElementById("nav-links").classList.toggle("active");
 });
 
-// Smooth scrolling
+// scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -13,12 +13,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Contact form
+// contact form
 document.getElementById("contact-form").addEventListener("submit", function () {
   document.getElementById("form-status").style.display = "block";
 });
 
-// Typing effect
+// typing effect
 const phrases = [
   "Front-end developer who turns coffee into code and bugs into features (mostly)",
   "Trying to make the internet less ugly",
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   type();
 });
 
-// Dark mode toggle
+// dark mode toggle
 const toggle = document.getElementById("theme-toggle");
 toggle.addEventListener("change", () => {
   document.body.classList.toggle("dark-mode", toggle.checked);

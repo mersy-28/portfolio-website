@@ -1,11 +1,16 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
+=======
+  "description": "My personal website showcasing my skills and projects.",
+>>>>>>> 449d00e (UI and functionality tweaks. added README.md)
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mersy-28/portfolio-website.git"
@@ -17,4 +22,9 @@
     "url": "https://github.com/mersy-28/portfolio-website/issues"
   },
   "homepage": "https://github.com/mersy-28/portfolio-website#readme"
+=======
+  "keywords": [],
+  "author": "Emaan Hookey",
+  "license": "ISC"
+>>>>>>> 449d00e (UI and functionality tweaks. added README.md)
 }

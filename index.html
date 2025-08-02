@@ -4,109 +4,179 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emaan Hookey | Developer Portfolio</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <div class="logo">Code & Chaos</div>
-      <nav>
-        <ul id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+  <header class="bg-white border-bottom sticky-top py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="fw-bold fs-4">emaan.dev | code & chaos</div>
+      <nav class="d-flex align-items-center">
+        <ul class="nav d-none d-md-flex" id="nav-links">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <div class="dark-mode-toggle">
-          🌞<input type="checkbox" id="theme-toggle">🌙
+        <div class="form-check form-switch mx-3">
+          <input class="form-check-input" type="checkbox" id="theme-toggle">
         </div>
-        <button id="menu-toggle">☰</button>
+        <button id="menu-toggle" class="btn btn-outline-secondary d-md-none">☰</button>
       </nav>
     </div>
   </header>
 
-  <section id="hero">
+  <section id="hero" class="text-center py-5 bg-light">
     <div class="container">
-      <h2><span class="highlight">Emaan Hookey</span></h2>
-      <p><span id="typing-text">Just a friendly neighborhood dev just trying to make the internet less ugly</span></p>
-      <a href="#projects" class="btn">Behold My Work</a>
+      <h2 class="display-4 fw-bold"><span class="highlight">Emaan Hookey</span></h2>
+      <p class="lead"><span id="typing-text">Just a friendly neighborhood dev just trying to make the internet less ugly</span></p>
+      <a href="#projects" class="btn btn-primary mt-3">Behold My Work</a>
     </div>
   </section>
 
-  <section id="about" data-aos="fade-up">
-    <div class="container">
+  <section id="about" class="py-5" data-aos="fade-up">
+    <div class="container text-center">
       <h2>About Me</h2>
-      <p>
+      <p class="mx-auto" style="max-width: 700px;">
         By day, I wrangle HTML, CSS, and JavaScript. By night... I still do that. I'm the kind of person who thinks semicolons are optional but emotional breakdowns over broken code are mandatory.
       </p>
-      <p>
+      <p class="mx-auto" style="max-width: 700px;">
         I specialize in making things that look good and (usually) don’t crash. I love clean code, clever UI, and snacks. Mostly snacks.
       </p>
     </div>
   </section>
 
-  <section id="projects" data-aos="fade-up">
+  <section id="projects" class="py-5" data-aos="fade-up">
     <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project" data-aos="fade-right">
-          <h3>🌐 Portfolio Website</h3>
-          <p>A snazzy site to showcase my work, built with love and a dash of caffeine.</p>
+      <h2 class="text-center">Projects</h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 d-flex" data-aos="fade-right">
+          <div class="card shadow w-100 h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">🌐 Portfolio Website</h5>
+              <p class="card-text">A snazzy site to showcase my work, built with love and a dash of caffeine.</p>
+            </div>
+          </div>
         </div>
-        <div class="project" data-aos="fade-left">
-          <h3>📅 Tempus Today</h3>
-          <p>Discover what happened on this day in history—because someone should learn from the past, even if it's not you.</p>
+
+        <div class="col-md-6 d-flex" data-aos="fade-left">
+          <div class="card shadow w-100 h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">📅 Tempus Today</h5>
+              <p class="card-text">Discover what happened on this day in history—because someone should learn from the past, even if it's not you.</p>
+              <a href="https://mersy-28.github.io/tempus-today/" target="_blank" class="stretched-link">Click here to check out the GitHub deployment</a>
+            </div>
+          </div>
         </div>
-        <div class="project" data-aos="fade-right">
-          <h3>🧮 Calculator</h3>
-          <p>A sassy calculator that neatly performs all basic math operations, decimals included.</p>
+
+        <div class="col-md-6 d-flex" data-aos="fade-right">
+          <div class="card shadow w-100 h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">🧮 Calculator</h5>
+              <p class="card-text">A sassy calculator that neatly performs all basic math operations, decimals included.</p>
+            </div>
+          </div>
         </div>
-        <div class="project" data-aos="fade-left">
-          <h3>🖼️ Image Gallery</h3>
-          <p>Stunning Greek statues that silently judge you while you browse.</p>
+
+        <div class="col-md-6 d-flex" data-aos="fade-left">
+          <div class="card shadow w-100 h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">🖼️ Image Gallery</h5>
+              <p class="card-text">Stunning Greek statues that silently judge you while you browse.</p>
+            </div>
+          </div>
         </div>
-        <div class="project" data-aos="fade-right">
-          <h3>📚 Book Finder</h3>
-          <p>Find your next read, or just pretend to look smart at parties.</p>
+
+        <div class="col-md-6 mx-auto d-flex" data-aos="fade-right">
+          <div class="card shadow w-100 h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">📚 Book Finder</h5>
+              <p class="card-text">Find your next read, or just pretend to look smart at parties.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <p style="text-align:center; margin-top:20px;">More projects coming soon (enough)!</p>
+      <p class="text-center mt-4">More projects coming soon (enough)!</p>
     </div>
   </section>
 
-  <section id="contact" data-aos="fade-up">
-    <div class="container">
+  <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
       <h2>Contact Me</h2>
-      <p>
-        Got a cool project? Want to hire someone who can code and quote memes in the same breath? Slide into my inbox:
+      <p class="mx-auto" style="max-width: 600px;">
+        Got a cool project? Need someone who can debug your code and your life choices? Slide into my inbox:
       </p>
       <form 
         id="contact-form"
         action="https://formspree.io/f/xjkoekgj"
         method="POST"
-        data-aos="fade-up"
+        class="mx-auto mt-4"
+        style="max-width: 600px;"
       >
-        <input type="text" placeholder="Your Name (or alias, I won’t judge)" name="name" required />
-        <input type="email" placeholder="Your Email (spam-free, promise)" name="email" required />
-        <textarea placeholder="Your Message (bonus points for jokes)" name="message" required></textarea>
-        <button type="submit">Summon Me</button>
+        <div class="mb-3">
+          <input type="text" class="form-control" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" name="message" placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Summon Me</button>
       </form>
-      <p id="form-status" style="text-align:center; display:none;">Thanks! Your message has been sent.</p>
+      <p id="form-status" class="text-center mt-3" style="display:none;">Thanks! Your message has been sent.</p>
     </div>
   </section>
 
-  <footer>
+  <footer class="bg-white text-center py-4">
     <div class="container">
-      <p>© 2025 Emaan Hookey. No pixels were harmed in the making of this site.</p>
+      <p class="text-muted small mb-2"><i>"Code is like humor. When you have to explain it, it's bad."</i> - Cory House</p>
+      <p class="text-muted small mb-2">© 2025 Emaan Hookey. Built with caffeine and questionable life choices.</p>
+
+      <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+
+        <a 
+          href="https://github.com/mersy-28" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-decoration-none fw-medium"
+        >
+          GitHub
+        </a>
+
+        <a 
+          href="https://www.linkedin.com/in/emaan-hookey/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-decoration-none fw-medium"
+        >
+          LinkedIn
+        </a>
+        <iframe 
+          src="https://github.com/sponsors/mersy-28/button" 
+          title="Sponsor mersy-28" 
+          height="32" 
+          width="114" 
+          style="border: 0; border-radius: 6px;">
+        </iframe>
+
+      </div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  
   <script src="script.js"></script>
 </body>
 </html>
