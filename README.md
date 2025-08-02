@@ -1,10 +1,10 @@
-# Emaan Hookey - Portfolio Website
+# 📁 Emaan Hookey - Portfolio Website
 
 Welcome to my personal front-end developer portfolio! This is where I showcase my skills, projects, and some questionable humor — all wrapped up in a clean, responsive, dark-mode-enabled website.
 
 ---
 
-## Live Site
+## 🚀 Live Site
 
 Visit it here:
 **https://emaan.dev**
@@ -18,7 +18,7 @@ If you’d like to support my work, you can sponsor me here:
 
 ---
 
-## Features
+## ✨ Features
 
 - Responsive layout powered by **Bootstrap 5**
 - **Dark mode toggle**
@@ -27,7 +27,7 @@ If you’d like to support my work, you can sponsor me here:
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 - **HTML5**, **CSS3**, **JavaScript (ES6+)**
 - **Bootstrap 5**
@@ -37,7 +37,7 @@ If you’d like to support my work, you can sponsor me here:
 
 ---
 
-## Running Locally
+## 🧪 Running Locally
 
 1. Clone this repo
 ```
@@ -56,7 +56,7 @@ npx serve
 
 ---
 
-## Contact
+## 📬 Contact
 
 Have a project idea or opportunity?
 Use the contact form on the website, or shoot me an email at: [contact@emaan.dev](mailto:contact@emaan.dev)
