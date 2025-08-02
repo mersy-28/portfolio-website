@@ -24,6 +24,7 @@ If you’d like to support my work, you can sponsor me here:
 - **Dark mode toggle**
 - Smooth scrolling and subtle **AOS animations**
 - Dynamic **typing effect** in the hero section
+- Contact form powered by **Formspree**
 
 ---
 
