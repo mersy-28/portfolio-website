@@ -14,19 +14,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Contact form
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Message sent! (Not really, this is a static demo.)");
-  this.reset();
+document.getElementById("contact-form").addEventListener("submit", function () {
+  document.getElementById("form-status").style.display = "block";
 });
 
 // Typing effect
 const phrases = [
-  "Just a friendly neighborhood dev",
+  "Front-end developer who turns coffee into code and bugs into features (mostly)",
   "Trying to make the internet less ugly",
-  "Building the web, one line at a time",
+  "Building websites that even my mom would be proud of",
   "Coffee-powered coder",
-  "Wrangler of bugs and pixels",
   "Will code for snacks"
 ];
 let index = 0;
@@ -39,7 +36,7 @@ function type() {
     char++;
     setTimeout(type, 70);
   } else {
-    setTimeout(erase, 2000);
+    setTimeout(erase, 3000);
   }
 }
 

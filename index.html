@@ -52,12 +52,24 @@
       <h2>Projects</h2>
       <div class="project-grid">
         <div class="project" data-aos="fade-right">
+          <h3>🌐 Portfolio Website</h3>
+          <p>A snazzy site to showcase my work, built with love and a dash of caffeine.</p>
+        </div>
+        <div class="project" data-aos="fade-left">
+          <h3>📅 Tempus Today</h3>
+          <p>Discover what happened on this day in history—because someone should learn from the past, even if it's not you.</p>
+        </div>
+        <div class="project" data-aos="fade-right">
           <h3>🧮 Calculator</h3>
           <p>A sassy calculator that neatly performs all basic math operations, decimals included.</p>
         </div>
         <div class="project" data-aos="fade-left">
           <h3>🖼️ Image Gallery</h3>
           <p>Stunning Greek statues that silently judge you while you browse.</p>
+        </div>
+        <div class="project" data-aos="fade-right">
+          <h3>📚 Book Finder</h3>
+          <p>Find your next read, or just pretend to look smart at parties.</p>
         </div>
       </div>
       <p style="text-align:center; margin-top:20px;">More projects coming soon (enough)!</p>
@@ -70,12 +82,18 @@
       <p>
         Got a cool project? Want to hire someone who can code and quote memes in the same breath? Slide into my inbox:
       </p>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name (or alias, I won’t judge)" required />
-        <input type="email" placeholder="Your Email (spam-free, promise)" required />
-        <textarea placeholder="Your Message (bonus points for jokes)" required></textarea>
+      <form 
+        id="contact-form"
+        action="https://formspree.io/f/xjkoekgj"
+        method="POST"
+        data-aos="fade-up"
+      >
+        <input type="text" placeholder="Your Name (or alias, I won’t judge)" name="name" required />
+        <input type="email" placeholder="Your Email (spam-free, promise)" name="email" required />
+        <textarea placeholder="Your Message (bonus points for jokes)" name="message" required></textarea>
         <button type="submit">Summon Me</button>
       </form>
+      <p id="form-status" style="text-align:center; display:none;">Thanks! Your message has been sent.</p>
     </div>
   </section>
 
