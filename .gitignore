@@ -1,4 +1,13 @@
-.DS_STORE
-.env
+# .gitignore for portfolio website
+# macOS
+.DS_Store
+# Node.js
 node_modules/
+# Logs
+logs/
+npm-debug.log*
+# Build output
 dist/
+build/
+# Environment variables
+.env
