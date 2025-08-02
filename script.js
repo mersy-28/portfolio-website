@@ -23,8 +23,8 @@ const phrases = [
   "Front-end developer who turns coffee into code and bugs into features (mostly)",
   "Trying to make the internet less ugly",
   "Building websites that even my mom would be proud of",
-  "Coffee-powered coder",
-  "Will code for snacks"
+  "Will code for snacks",
+  "Turning caffeine into code",
 ];
 let index = 0;
 let char = 0;
