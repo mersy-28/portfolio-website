@@ -110,6 +110,26 @@ nav {
   margin-bottom: 30px;
 }
 
+/* typing effect */
+#typing-text {
+  min-height: 1.5em;
+  display: inline-block;
+  height: 1.5em;
+  line-height: 1.5em;
+  vertical-align: top;
+}
+
+#typing-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+  color: #0077ff;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 .btn {
   display: inline-block;
   background-color: #0077ff;
@@ -296,6 +316,28 @@ body.dark-mode .form-control::placeholder {
 body.dark-mode textarea.form-control {
   background-color: #2b2b2b !important;
   color: #fff !important;
+}
+
+/* hero section dark mode */
+body.dark-mode #hero {
+  background: linear-gradient(to right, #2a2a2a, #1e1e1e) !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode #hero.bg-light {
+  background: linear-gradient(to right, #2a2a2a, #1e1e1e) !important;
+}
+
+body.dark-mode #hero .container {
+  background-color: transparent !important;
+}
+
+body.dark-mode #hero .highlight {
+  color: #4a9eff !important;
+}
+
+body.dark-mode #typing-text::after {
+  color: #4a9eff !important;
 }
 
 /* buttons */
