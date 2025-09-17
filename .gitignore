@@ -11,3 +11,6 @@ dist/
 build/
 # Environment variables
 .env
+
+# Local AI assistant rules (keep untracked)
+.github/copilot-instructions.md

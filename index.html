@@ -2,174 +2,262 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Faith Hookey | Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faith Hookey — Front‑End Developer</title>
+  <meta name="description" content="Portfolio of Faith Hookey — front-end developer focused on delightful, accessible web experiences.">
+  <meta name="theme-color" content="#0a84ff" />
+  <meta property="og:title" content="Faith Hookey — Front‑End Developer" />
+  <meta property="og:description" content="Selected projects, experience, and ways to get in touch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hookey.ca" />
+  <meta property="og:image" content="https://hookey.ca/og-image.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="bg-white border-bottom sticky-top py-3">
+  <header class="bg-white border-bottom sticky-top py-3" role="banner">
     <div class="container d-flex justify-content-between align-items-center">
-      <div class="fw-bold fs-4">code & chaos</div>
-      <nav class="d-flex align-items-center">
+      <a href="#hero" class="fw-bold fs-4 text-decoration-none brand">code & chaos</a>
+      <nav class="d-flex align-items-center" aria-label="Primary">
         <ul class="nav d-none d-md-flex" id="nav-links">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Tech Stack</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <div class="form-check form-switch mx-3">
-          <input class="form-check-input" type="checkbox" id="theme-toggle">
+        <div class="form-check form-switch mx-3" title="Toggle dark mode">
+          <input class="form-check-input" type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
         </div>
-        <button id="menu-toggle" class="btn btn-outline-secondary d-md-none">☰</button>
+        <button id="menu-toggle" class="btn btn-outline-secondary d-md-none" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">☰</button>
       </nav>
     </div>
   </header>
 
-  <section id="hero" class="text-center py-5 bg-light">
-    <div class="container">
-      <h2 class="display-4 fw-bold"><span class="highlight">Faith Hookey</span></h2>
-      <p class="lead"><span id="typing-text">Front-end developer who turns coffee into code and bugs into features (mostly)</span></p>
-      <a href="#projects" class="btn btn-primary mt-3">Behold My Work</a>
-    </div>
-  </section>
-
-  <section id="about" class="py-5" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>About Me</h2>
-      <p class="mx-auto" style="max-width: 700px;">
-        By day, I wrangle HTML, CSS, and JavaScript. By night... I still do that. I'm the kind of person who thinks semicolons are optional but emotional breakdowns over broken code are mandatory.
-      </p>
-      <p class="mx-auto" style="max-width: 700px;">
-        I specialize in making things that look good and (usually) don’t crash. I love clean code, clever UI, and snacks. Mostly snacks.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects" class="py-5" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center">Projects</h2>
-      <div class="row g-4 mt-4">
-        <div class="col-md-6 d-flex" data-aos="fade-left">
-          <div class="card shadow w-100 h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title">🌐 Portfolio Website</h5>
-              <p class="card-text">A snazzy site to showcase my work, built with love and a dash of caffeine.</p>
-              <a href="https://hookey.ca" target="_blank" class="stretched-link">hookey.ca</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 d-flex" data-aos="fade-right">
-          <div class="card shadow w-100 h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title">🎮 2048 Game</h5>
-              <p class="card-text">Slide tiles, make questionable decisions, and pretend it's improving your brain function.</p>
-              <a href="https://mersy-28.github.io/js-2048-game/" target="_blank" class="stretched-link">Click here to check out the GitHub deployment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 d-flex" data-aos="fade-left">
-          <div class="card shadow w-100 h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title">📅 Tempus Today</h5>
-              <p class="card-text">Discover what happened on this day in history—because someone should learn from the past, even if it's not you.</p>
-              <a href="https://mersy-28.github.io/tempus-today/" target="_blank" class="stretched-link">Click here to check out the GitHub deployment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 d-flex" data-aos="fade-right">
-          <div class="card shadow w-100 h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title">🌎 WorldWander</h5>
-              <p class="card-text">Explore destinations, pin favorites, and plan trips you'll totally take someday.</p>
-              <a href="https://worldwander-zeta.vercel.app/" target="_blank" class="stretched-link">Click here to check out the Vercel Deployment</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 d-flex" data-aos="fade-left">
-          <div class="card shadow w-100 h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title">🧮 Calculator</h5>
-              <p class="card-text">A sassy calculator that neatly performs all basic math operations, decimals included.</p>
-              <a href="https://codepen.io/mersy-28/pen/emmLZLa" target="_blank" class="stretched-link">Click here to check it out on CodePen</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mx-auto d-flex" data-aos="fade-right">
-          <div class="card shadow w-100 h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title">📚 Book Finder</h5>
-              <p class="card-text">Find your next read, or just pretend to look smart at parties.</p>
-              <a href="" target="_blank" class="stretched-link"></a>
-            </div>
-          </div>
+  <main id="main">
+    <section id="hero" class="text-center py-5 bg-light">
+      <div class="container">
+        <p class="eyebrow">Hi, I’m</p>
+        <h1 class="display-4 fw-bold"><span class="highlight">Faith Hookey</span></h1>
+        <p class="lead"><span id="typing-text">Front-end developer who turns coffee into code and bugs into features (mostly)</span></p>
+        <div class="d-flex gap-3 justify-content-center mt-3">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline-primary">Get in touch</a>
         </div>
       </div>
-      <p class="text-center mt-4">More projects coming soon (enough)!</p>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="py-5 bg-light" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Contact Me</h2>
-      <p class="mx-auto" style="max-width: 600px;">
-        Got a cool project? Need someone who can debug your code and your life choices? Slide into my inbox:
-      </p>
-      <form 
-        id="contact-form"
-        action="https://formspree.io/f/xjkoekgj"
-        method="POST"
-        class="mx-auto mt-4"
-        style="max-width: 600px;"
-      >
-        <div class="mb-3">
-          <input type="text" class="form-control" name="name" placeholder="Your Name" required />
+    <section id="about" class="py-5" data-aos="fade-up">
+      <div class="container text-center">
+        <h2>About</h2>
+        <p class="mx-auto" style="max-width: 700px;">
+          By day, I wrangle HTML, CSS, and JavaScript. By night... I still do that. I'm the kind of person who thinks semicolons are optional but emotional breakdowns over broken code are mandatory.
+        </p>
+        <p class="mx-auto" style="max-width: 700px;">
+          I specialize in making things that look good and (usually) don’t crash. I love clean code, clever UI, and snacks. Mostly snacks.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center">Tech Stack</h2>
+        <ul class="skills-list mt-3">
+          <li>HTML5</li>
+          <li>CSS3 / Sass</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Bootstrap</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Redux Toolkit</li>
+          <li>Git & GitHub</li>
+          <li>REST APIs</li>
+          <li>npm</li>
+          <li>VS Code</li>
+          <li>Vercel</li>
+          <li>Figma</li>
+          <li>ESLint & Prettier</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center">Projects</h2>
+        <div class="row g-4 mt-4">
+          <div class="col-md-6 d-flex" data-aos="fade-left">
+            <article class="card shadow w-100 h-100 project-card">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">🌐 Portfolio Website</h3>
+                <p class="card-text">A snazzy site to showcase my work, built with love and a dash of caffeine.</p>
+                <div class="mt-auto d-flex gap-2 flex-wrap">
+                  <span class="badge text-bg-light">HTML</span>
+                  <span class="badge text-bg-light">CSS</span>
+                  <span class="badge text-bg-light">Bootstrap</span>
+                </div>
+                <div class="mt-3 d-flex gap-3">
+                  <a href="https://hookey.ca" target="_blank" class="btn btn-sm btn-primary">Live</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 d-flex" data-aos="fade-right">
+            <article class="card shadow w-100 h-100 project-card">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">🎮 2048 Game</h3>
+                <p class="card-text">Slide tiles, make questionable decisions, and pretend it's improving your brain function.</p>
+                <div class="mt-auto d-flex gap-2 flex-wrap">
+                  <span class="badge text-bg-light">JS</span>
+                  <span class="badge text-bg-light">Game</span>
+                </div>
+                <div class="mt-3 d-flex gap-3">
+                  <a href="https://mersy-28.github.io/js-2048-game/" target="_blank" class="btn btn-sm btn-primary">Live</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 d-flex" data-aos="fade-left">
+            <article class="card shadow w-100 h-100 project-card">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">📅 Tempus Today</h3>
+                <p class="card-text">Discover what happened on this day in history—because someone should learn from the past, even if it's not you.</p>
+                <div class="mt-auto d-flex gap-2 flex-wrap">
+                  <span class="badge text-bg-light">API</span>
+                  <span class="badge text-bg-light">Frontend</span>
+                </div>
+                <div class="mt-3 d-flex gap-3">
+                  <a href="https://mersy-28.github.io/tempus-today/" target="_blank" class="btn btn-sm btn-primary">Live</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 d-flex" data-aos="fade-right">
+            <article class="card shadow w-100 h-100 project-card">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">🌎 WorldWander</h3>
+                <p class="card-text">Explore destinations, pin favorites, and plan trips you'll totally take someday.</p>
+                <div class="mt-auto d-flex gap-2 flex-wrap">
+                  <span class="badge text-bg-light">Next.js</span>
+                  <span class="badge text-bg-light">Maps</span>
+                </div>
+                <div class="mt-3 d-flex gap-3">
+                  <a href="https://worldwander-zeta.vercel.app/" target="_blank" class="btn btn-sm btn-primary">Live</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 d-flex" data-aos="fade-left">
+            <article class="card shadow w-100 h-100 project-card">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">🧮 Calculator</h3>
+                <p class="card-text">A sassy calculator that neatly performs all basic math operations, decimals included.</p>
+                <div class="mt-auto d-flex gap-2 flex-wrap">
+                  <span class="badge text-bg-light">JS</span>
+                  <span class="badge text-bg-light">UI</span>
+                </div>
+                <div class="mt-3 d-flex gap-3">
+                  <a href="https://codepen.io/mersy-28/pen/emmLZLa" target="_blank" class="btn btn-sm btn-primary">Live</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 mx-auto d-flex" data-aos="fade-right">
+            <article class="card shadow w-100 h-100 project-card">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title h5">📚 Book Finder</h3>
+                <p class="card-text">Find your next read, or just pretend to look smart at parties.</p>
+                <div class="mt-auto d-flex gap-2 flex-wrap">
+                  <span class="badge text-bg-light">API</span>
+                  <span class="badge text-bg-light">Search</span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" name="email" placeholder="Your Email" required />
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" name="message" placeholder="Your Message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Summon Me</button>
-      </form>
-      <p id="form-status" class="text-center mt-3" style="display:none;">Thanks! Your message has been sent.</p>
-    </div>
-  </section>
+        <p class="text-center mt-4">More projects coming soon (enough)!</p>
+      </div>
+    </section>
 
-  <footer class="bg-white text-center py-4">
-    <div class="container">
-      <p class="text-muted small mb-2"><i>"Code is like humor. When you have to explain it, it's bad."</i> - Cory House</p>
-      <p class="text-muted small mb-2">© 2025 Faith Hookey. Built with caffeine and questionable life choices.</p>
+    <section id="experience" class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center">Experience</h2>
+        <ol class="timeline mt-4">
+          <li>
+            <div class="timeline-card">
+              <h3 class="h6 mb-1">IT Web Programming Student <span class="text-muted">— Nova Scotia Community College</span></h3>
+              <p class="mb-1 small text-muted">2025 — 2027</p>
+              <p class="mb-0">Two‑year diploma focused on modern web development—semantic HTML, responsive CSS, JavaScript, databases, and server‑side fundamentals—with an emphasis on accessibility, collaboration, and real‑world projects.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <h3 class="h6 mb-1">Front-End Web + Mobile Development <span class="text-muted">— Nucamp</span></h3>
+              <p class="mb-1 small text-muted">June 2025 — October 2025</p>
+              <p class="mb-0">Projects, courses, and way too many tabs. Focus on JS fundamentals, React.js, and React Native.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-      <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-
-        <a 
-          href="https://github.com/mersy-28" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="text-decoration-none fw-medium"
+    <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+      <div class="container text-center">
+        <h2>Contact</h2>
+        <p class="mx-auto" style="max-width: 600px;">
+          Got a cool project? Need someone who can debug your code and your life choices? Slide into my inbox:
+        </p>
+        <form 
+          id="contact-form"
+          action="https://formspree.io/f/xjkoekgj"
+          method="POST"
+          class="mx-auto mt-4"
+          style="max-width: 600px;"
         >
+          <div class="mb-3">
+            <label for="name" class="visually-hidden">Your Name</label>
+            <input id="name" type="text" class="form-control" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="visually-hidden">Your Email</label>
+            <input id="email" type="email" class="form-control" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="visually-hidden">Your Message</label>
+            <textarea id="message" class="form-control" name="message" placeholder="Your Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+        <p id="form-status" class="text-center mt-3" style="display:none;">Thanks! Your message has been sent.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white text-center py-4" role="contentinfo">
+    <div class="container">
+      <p class="text-muted small mb-2"><i>“Code is like humor. When you have to explain it, it's bad.”</i> — Cory House</p>
+      <p class="text-muted small mb-2">© <span id="year"></span> Faith Hookey. Built with caffeine and questionable life choices.</p>
+      <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+        <a href="https://github.com/mersy-28" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-medium d-inline-flex align-items-center gap-1" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.63-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.39 1.24-3.23-.12-.3-.54-1.51.12-3.15 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.64.24 2.85.12 3.15.77.84 1.24 1.92 1.24 3.23 0 4.61-2.8 5.63-5.47 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5z"/></svg>
           GitHub
         </a>
-
-        <a 
-          href="https://www.linkedin.com/in/faith-hookey/" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="text-decoration-none fw-medium"
-        >
+        <a href="https://www.linkedin.com/in/faith-hookey/" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-medium d-inline-flex align-items-center gap-1" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.86-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.4v1.56h.05c.47-.89 1.62-1.83 3.33-1.83 3.56 0 4.22 2.35 4.22 5.41v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
           LinkedIn
         </a>
         <iframe 
@@ -179,18 +267,13 @@
           width="114" 
           style="border: 0; border-radius: 6px;">
         </iframe>
-
       </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  
+  <script>AOS.init();</script>
   <script src="script.js"></script>
 </body>
 </html>

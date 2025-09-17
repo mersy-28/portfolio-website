@@ -1,6 +1,9 @@
-// mobile menu toggle
-document.getElementById("menu-toggle").addEventListener("click", function () {
-  document.getElementById("nav-links").classList.toggle("active");
+// mobile menu toggle with ARIA state
+const menuBtn = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+menuBtn.addEventListener("click", function () {
+  const isActive = navLinks.classList.toggle("active");
+  menuBtn.setAttribute("aria-expanded", String(isActive));
 });
 
 // scrolling
@@ -62,8 +65,21 @@ document.addEventListener("DOMContentLoaded", () => {
   type();
 });
 
-// dark mode toggle
+// dark mode toggle with persistence
 const toggle = document.getElementById("theme-toggle");
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  document.body.classList.add("dark-mode");
+  toggle.checked = true;
+}
 toggle.addEventListener("change", () => {
-  document.body.classList.toggle("dark-mode", toggle.checked);
+  const enabled = toggle.checked;
+  document.body.classList.toggle("dark-mode", enabled);
+  localStorage.setItem("theme", enabled ? "dark" : "light");
+});
+
+// footer year
+document.addEventListener("DOMContentLoaded", () => {
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });

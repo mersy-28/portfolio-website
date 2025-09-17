@@ -21,9 +21,11 @@ If you’d like to support my work, you can sponsor me here:
 ## ✨ Features
 
 - Responsive layout powered by **Bootstrap 5**
-- **Dark mode toggle**
+- **Dark mode toggle** with preference saved to localStorage
 - Smooth scrolling and subtle **AOS animations**
 - Dynamic **typing effect** in the hero section
+- New sections: **Skills** and **Experience**
+- Accessibility improvements: semantic landmarks, skip link, ARIA states
 - Contact form powered by **Formspree**
 
 ---
